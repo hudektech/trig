@@ -1,0 +1,67 @@
+.w80 {
+  width: 80% !important;
+
+  margin-left: auto;
+  margin-right: auto;
+  color: black !important;
+  text-shadow: 1px 1px 2px grey;
+}
+
+body {
+  background-color: papayawhip;
+}
+
+/* #cir {
+  width: 50vw;
+  height: 40vh;
+  margin-top: 10vh;
+} */
+
+/* .container-canvas {
+  margin: 0 auto;
+} */
+.canvas-container {
+  width: 100%;
+  text-align: center;
+}
+
+canvas {
+  display: inline;
+}
+
+.red {
+  color: crimson;
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
+.yellow {
+  color: yellow;
+  background-color: black;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 544px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

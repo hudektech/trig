@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width' initial-scale='1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+    integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="pi512.png" type="image/x-icon">
+  <title>Unit Circle</title>
+</head>
+
+<body>
+  <!-- <div class="w80"> -->
+  <div class="w80 ">
+
+    <h1 class="mt-2 text-center">Unit Circle <span class="green">Radius</span> = 1</h1>
+
+    <div class="canvas-container">
+      <canvas id='cir' class="col-12" width=800 height=800></canvas>
+
+      <div class="row px-sm-4 px-0 justify-content-center">
+        <div class="yellow">Angle (degrees)</div>
+        <div class="row col-12 justify-content-center">
+          <div class="px-0 row justify-content-between col-12">
+            <div class="px-0 col-1">0</div>
+            <!-- <div class="px-0 col-1">45</div> -->
+            <div class="px-0 col-1">90</div>
+            <!-- <div class="px-0 col-1">135</div> -->
+            <div class="px-0 col-1">180</div>
+            <!-- <div class="px-0 col-1">225</div> -->
+            <div class="px-0 col-1">270</div>
+            <!-- <div class="px-0 col-1">315</div> -->
+            <div class="px-0 col-1">360</div>
+          </div>
+        </div>
+        <div class="px-4 col-12">
+          <input id="rad" class="px-0 col-12" type="range" min="0" step=".01" max="6.28" value="0.7854">
+        </div>
+      </div>
+
+      <div id="cosine" class="blue">Cosine</div>
+      <canvas id='cos' class="col-12" width=800 height=800></canvas>
+
+      <div id="sine" class="red">Sine</div>
+      <canvas id='sin' class="col-12" width=800 height=800></canvas>
+    </div>
+
+  </div>
+  <!-- </div> -->
+
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+    integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+    crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+    integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1'
+    crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
+    integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
+    crossorigin='anonymous'></script>
+
+  <script src="main.js?v=2"></script>
+  <script src="events.js?v=2"></script>
+  <script src="init.js?v=2"></script>
+</body>
+
+</html>
